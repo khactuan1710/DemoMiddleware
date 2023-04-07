@@ -34,10 +34,6 @@ app.post('/login', (request, response) => {
 		}
 	})
 })
-app.post('/create-account', createAccountLimiter, (request, response) => {
-    console.log('hello');
-    response.send('Bạn vừa gọi api tạo account')
-})
 
 //client
 const fetch2 = require("node-fetch");
